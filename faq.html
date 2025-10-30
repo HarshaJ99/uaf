@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - United Assistance Foundation Lanka</title>
+    <link rel="icon" type="image/jpeg" href="/assets/logo 2.jpg">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1A237E',
+                        secondary: '#FF6B00',
+                        background: '#FFF8E1',
+                        accent: '#FFD54F'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background min-h-screen flex flex-col">
+    <custom-navbar></custom-navbar>
+    
+    <main class="flex-grow">
+        <!-- FAQ Hero -->
+        <section class="bg-gradient-to-r from-amber-500 to-amber-600 text-white py-16">
+            <div class="container mx-auto px-4 text-center">
+                <h1 class="text-4xl font-bold mb-6">Frequently Asked Questions</h1>
+                <p class="text-xl max-w-2xl mx-auto">Find answers to common questions about our organization, projects, and how you can get involved.</p>
+            </div>
+        </section>
+
+        <!-- FAQ Content -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Common Questions</h2>
+                <div class="max-w-4xl mx-auto space-y-6">
+                    <div class="border rounded-lg p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">What is the United Assistance Foundation?</h3>
+                        <p class="text-gray-600">The United Assistance Foundation is a non-profit organization dedicated to sustainable community development across Sri Lanka. We focus on education, healthcare, infrastructure, and women's empowerment initiatives.</p>
+                    </div>
+                    <div class="border rounded-lg p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">How are donations used?</h3>
+                        <p class="text-gray-600">100% of your donation goes directly to our projects. We operate with minimal administrative costs and do not pay salaries to our leadership team. All funds are carefully allocated to maximize community impact.</p>
+                    </div>
+                    <div class="border rounded-lg p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Can I volunteer with your organization?</h3>
+                        <p class="text-gray-600">Yes! We welcome volunteers with various skills and backgrounds. Whether you're interested in fieldwork, administration, or specialized expertise, we have opportunities for you to contribute. Please contact us through our website.</p>
+                    </div>
+                    <div class="border rounded-lg p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">How can I stay updated on your projects?</h3>
+                        <p class="text-gray-600">You can subscribe to our newsletter, follow us on social media, or check our News & Updates page regularly. We also send annual reports to our major donors detailing our achievements and impact.</p>
+                    </div>
+                    <div class="border rounded-lg p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Are donations tax-deductible?</h3>
+                        <p class="text-gray-600">Yes, donations to the United Assistance Foundation are tax-deductible in Sri Lanka. We provide official receipts for all contributions that can be used for tax purposes.</p>
+                    </div>
+                    <div class="border rounded-lg p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">How can I partner with your organization?</h3>
+                        <p class="text-gray-600">We welcome partnerships with corporations, government agencies, and other NGOs. Partnership opportunities include funding specific projects, providing in-kind donations, or collaborating on joint initiatives. Contact us to discuss partnership options.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <custom-footer></custom-footer>
+
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script>feather.replace();</script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>United Assistance Foundation Lanka</title>
+    <link rel="icon" type="image/jpeg" href="/assets/logo 2.jpg">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1A237E',
+                        secondary: '#FF6B00',
+                        background: '#FFF8E1',
+                        accent: '#FFD54F'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background min-h-screen flex flex-col">
+    <custom-navbar></custom-navbar>
+    
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-r from-amber-500 to-amber-600 text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-5xl font-bold mb-6">United Assistance Foundation Lanka</h1>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Dedicated to improving lives and communities across Sri Lanka through sustainable development initiatives.</p>
+            <div class="flex gap-4 justify-center flex-wrap">
+                <a href="#donate" class="bg-white text-amber-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">Donate Now</a>
+                <a href="#projects" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-amber-600 transition duration-300">Our Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="text-center">
+                    <i data-feather="target" class="w-16 h-16 text-amber-500 mx-auto mb-6"></i>
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Our Mission</h2>
+                    <p class="text-gray-600 text-lg">"Dedicated to improving lives and communities across Sri Lanka through sustainable development initiatives."</p>
+                </div>
+                <div class="text-center">
+                    <i data-feather="eye" class="w-16 h-16 text-amber-500 mx-auto mb-6"></i>
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Our Vision</h2>
+                    <p class="text-gray-600 text-lg">"Empowering Communities, Transforming Lives"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Showcase -->
+    <section id="projects" class="py-16 bg-background">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Completed Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project cards will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Section -->
+    <section id="donate" class="py-16 bg-amber-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Support Our Mission</h2>
+            <div class="flex flex-col md:flex-row gap-8 max-w-6xl mx-auto">
+                <!-- Primary Bank Account Card (BOC) -->
+                <div class="flex-1 bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold text-amber-600 mb-6 text-center">Primary Bank Account</h3>
+                    <div class="space-y-4">
+                        <div class="border-b pb-3">
+                            <h4 class="font-semibold text-gray-800 text-lg">Account Name</h4>
+                            <p class="text-gray-600">United Assistance Foundation</p>
+                        </div>
+                        <div class="border-b pb-3">
+                            <h4 class="font-semibold text-gray-800 text-lg">Bank</h4>
+                            <p class="text-gray-600">BOC</p>
+                        </div>
+                        <div class="border-b pb-3">
+                            <h4 class="font-semibold text-gray-800 text-lg">Branch Code</h4>
+                            <p class="text-gray-600">609</p>
+                        </div>
+                        <div class="border-b pb-3">
+                            <h4 class="font-semibold text-gray-800 text-lg">Account Number</h4>
+                            <p class="text-gray-600 font-mono">85371127</p>
+                        </div>
+                        <div class="border-b pb-3">
+                            <h4 class="font-semibold text-gray-800 text-lg">SWIFT Code</h4>
+                            <p class="text-gray-600 font-mono">BCEYLKLX</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800 text-lg">Bank Code</h4>
+                            <p class="text-gray-600">7010</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Secondary Bank Account Card (NDB) -->
+                <div class="flex-1 bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold text-amber-600 mb-6 text-center">Secondary Bank Account</h3>
+                    <div class="space-y-4">
+                        <div class="border-b pb-3">
+                            <h4 class="font-semibold text-gray-800 text-lg">Account Name</h4>
+                            <p class="text-gray-600">Dharma Shakthi Foundation</p>
+                        </div>
+                        <div class="border-b pb-3">
+                            <h4 class="font-semibold text-gray-800 text-lg">Bank</h4>
+                            <p class="text-gray-600">NDB</p>
+                        </div>
+                        <div class="border-b pb-3">
+                            <h4 class="font-semibold text-gray-800 text-lg">Branch Code</h4>
+                            <p class="text-gray-600">8106</p>
+                        </div>
+                        <div class="border-b pb-3">
+                            <h4 class="font-semibold text-gray-800 text-lg">Account Number</h4>
+                            <p class="text-gray-600 font-mono">115510458585</p>
+                        </div>
+                        <div class="border-b pb-3">
+                            <h4 class="font-semibold text-gray-800 text-lg">SWIFT Code</h4>
+                            <p class="text-gray-600 font-mono">NDBSLKLX</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800 text-lg">Bank Code</h4>
+                            <p class="text-gray-600">7214</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-bold text-amber-600 mb-4">Make a Difference</h3>
+                <p class="text-gray-600 mb-6">Your contribution helps us continue our vital work across Sri Lanka. Every donation makes an impact.</p>
+                <div class="bg-amber-100 p-4 rounded-lg">
+                    <i data-feather="heart" class="w-8 h-8 text-amber-600 mb-2"></i>
+                    <p class="font-semibold text-amber-700">100% of your donation goes directly to our projects</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Team -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Our Leadership Team</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="leadership-grid">
+                <!-- Leadership cards will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <custom-footer></custom-footer>
+
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+</body>
+</html>

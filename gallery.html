@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - United Assistance Foundation Lanka</title>
+    <link rel="icon" type="image/jpeg" href="/assets/logo 2.jpg">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1A237E',
+                        secondary: '#FF6B00',
+                        background: '#FFF8E1',
+                        accent: '#FFD54F'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background min-h-screen flex flex-col">
+    <custom-navbar></custom-navbar>
+    
+    <main class="flex-grow">
+        <!-- Gallery Hero -->
+        <section class="bg-gradient-to-r from-amber-500 to-amber-600 text-white py-16">
+            <div class="container mx-auto px-4 text-center">
+                <h1 class="text-4xl font-bold mb-6">Photo Gallery</h1>
+                <p class="text-xl max-w-2xl mx-auto">A visual journey through our projects and community impact across Sri Lanka.</p>
+            </div>
+        </section>
+
+        <!-- Gallery Grid -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Our Work in Pictures</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="overflow-hidden rounded-lg shadow-lg">
+                        <img src="http://static.photos/community/640x480/1" alt="Community Project" class="w-full h-64 object-cover">
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-lg">
+                        <img src="http://static.photos/education/640x480/2" alt="Education Initiative" class="w-full h-64 object-cover">
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-lg">
+                        <img src="http://static.photos/healthcare/640x480/3" alt="Healthcare Program" class="w-full h-64 object-cover">
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-lg">
+                        <img src="http://static.photos/infrastructure/640x480/4" alt="Infrastructure Development" class="w-full h-64 object-cover">
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-lg">
+                        <img src="http://static.photos/agriculture/640x480/5" alt="Agriculture Support" class="w-full h-64 object-cover">
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-lg">
+                        <img src="http://static.photos/women/640x480/6" alt="Women Empowerment" class="w-full h-64 object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <custom-footer></custom-footer>
+
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script>feather.replace();</script>
+</body>
+</html>

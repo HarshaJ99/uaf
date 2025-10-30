@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Involved - United Assistance Foundation Lanka</title>
+    <link rel="icon" type="image/jpeg" href="/assets/logo 2.jpg">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1A237E',
+                        secondary: '#FF6B00',
+                        background: '#FFF8E1',
+                        accent: '#FFD54F'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background min-h-screen flex flex-col">
+    <custom-navbar></custom-navbar>
+    
+    <main class="flex-grow">
+        <!-- Get Involved Hero -->
+        <section class="bg-gradient-to-r from-amber-500 to-amber-600 text-white py-16">
+            <div class="container mx-auto px-4 text-center">
+                <h1 class="text-4xl font-bold mb-6">Get Involved</h1>
+                <p class="text-xl max-w-2xl mx-auto">Join us in making a difference in communities across Sri Lanka through various engagement opportunities.</p>
+            </div>
+        </section>
+
+        <!-- Ways to Get Involved -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">How You Can Help</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-amber-50 p-6 rounded-lg shadow-lg">
+                        <i data-feather="dollar-sign" class="w-12 h-12 text-amber-600 mb-4"></i>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Donate</h3>
+                        <p class="text-gray-600 mb-4">Support our projects through financial contributions. Every donation makes a difference in someone's life.</p>
+                        <a href="/#donate" class="text-amber-600 font-semibold hover:underline">Learn More →</a>
+                    </div>
+                    <div class="bg-amber-50 p-6 rounded-lg shadow-lg">
+                        <i data-feather="users" class="w-12 h-12 text-amber-600 mb-4"></i>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Volunteer</h3>
+                        <p class="text-gray-600 mb-4">Contribute your time and skills to our initiatives. We welcome volunteers from all backgrounds.</p>
+                        <a href="/contact.html" class="text-amber-600 font-semibold hover:underline">Contact Us →</a>
+                    </div>
+                    <div class="bg-amber-50 p-6 rounded-lg shadow-lg">
+                        <i data-feather="briefcase" class="w-12 h-12 text-amber-600 mb-4"></i>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Partner With Us</h3>
+                        <p class="text-gray-600 mb-4">Organizations and businesses can collaborate with us to amplify our impact.</p>
+                        <a href="/contact.html" class="text-amber-600 font-semibold hover:underline">Partner Info →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="py-16 bg-gradient-to-r from-amber-500 to-amber-600 text-white">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold mb-6">Ready to Make a Difference?</h2>
+                <p class="text-xl mb-8 max-w-2xl mx-auto">Join our community of supporters committed to sustainable development in Sri Lanka.</p>
+                <a href="/contact.html" class="bg-white text-amber-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">Get Started Today</a>
+            </div>
+        </section>
+    </main>
+
+    <custom-footer></custom-footer>
+
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script>feather.replace();</script>
+</body>
+</html>
